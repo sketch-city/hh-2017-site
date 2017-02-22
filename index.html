@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Houston Hackathon 2017</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-92058017-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                                      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li>
+                        <a class="page-scroll" href="#download">Courses</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#workshops">Workshops</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-3 col-xs-1">
+                      <div class="header-content-inner">
+
+
+                        <!-- the animatey thing -->
+                        <svg width="700" height="700"></svg>
+                        <script src="https://d3js.org/d3.v4.min.js"></script>
+                        <script>
+                          var svg = d3.select("svg"),
+                          width = +svg.attr("width"),
+                          height = +svg.attr("height"),
+                          angles = d3.range(0, 2 * Math.PI, Math.PI / 200);
+
+                          var path = svg.append("g")
+
+                          .attr("transform", "translate(" + width / 3 + "," + height / 1.5 + ")")
+                          .attr("fill", "none")
+                          .attr("stroke-width", 10)
+                          .attr("stroke-linejoin", "round")
+                          .selectAll("path")
+                          .data(["#0088fe", "#0462d7", "#041781"])
+                          .enter().append("path")
+                          .attr("stroke", function(d) { return d; })
+                          // .style("mix-blend-mode", "darken")
+
+                          .datum(function(d, i) {
+                            return d3.radialLine()
+                            .curve(d3.curveLinearClosed)
+                            .angle(function(a) { return a; })
+                            .radius(function(a) {
+                            var t = d3.now() / 1000;
+                            return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
+                            });
+                          });
+
+                          d3.timer(function() {
+                            path.attr("d", function(d) {
+                              return d(angles);
+                            });
+                          });
+
+                          </script>
+
+                </div>
+                </div>
+
+                <div class="col-sm-2 col-xs-1">
+                      <div class="header-content-inner">
+<p></p>
+                      </div>
+                    </div>
+                <div class="col-sm-7 col-xs-10">
+                    <div class="header-content">
+
+                        <div class="header-content-inner" style="color:white;">
+                            <h1>24 hours to help solve civic issues together</h1>
+                            <h2>at Houston Technology Center</h2>
+                            <br />
+                            <p>Saturday May 20 + Sunday 21</p>
+                            <br />
+                            <a href="http://sketchcity.us13.list-manage.com/subscribe/post?u=21f25fae001e08a3b245e67bd&amp;id=eaba84a7b1" target="_blank"><img src="img/sub.png" style="margin:10px; height:5%; width:auto;"></a><a href="https://www.meetup.com/sketchcity/events/237324638/" target="_blank"><img src="img/rsvp.png" style="margin:10px; height:5%; width:auto;"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2 col-xs-1">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <section id="workshops" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Get Ahead with Workshops</h2>
+                        <p class="text-muted">They're all free</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="feature-item">
+                                    <img src="img/event-1.png">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+
+                                    <h3 style="font-color:white;">Intro to CLI Workshop</h3>
+                                    <p class="text-muted" style="font-color:white;">Usually, we can only click or drag so many things on our computer at a particular time. Using text commands, we can get a lot of work done faster. The command-line is a powerful, text-based interface to tell computers what you want to do. </p>
+
+<p class="text-muted" style="font-color:white;">By the end of this workshop, you will be able to see your files, modify or move your files, install and run programs all on the command line. More importantly, you will never be intimidated by that black window with the blinky prompt ever again!</p>
+
+<p class="text-muted" style="font-color:white;">“Never be intimidated by that black window with the blinky prompt ever again!”</p>
+                                    <a href="https://www.meetup.com/sketchcity/events/237322880/
+" target="_blank"><img src="img/register.png"></a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item">
+                                    <img src="img/event-2.png">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+
+                                    <h3 style="font-color:white;">Intro to <br />Git/Github</h3>
+                                    <p class="text-muted" style="font-color:white;">GitHub is a code hosting platform for collaboration. It lets you work on projects with people anywhere in the world. Part of the beauty is, you don’t need to know how to code to use GitHub. You can use it to help with coordinating and organizing your projects.</p>
+
+<p class="text-muted" style="font-color:white;">By the end of this workshop, you will be able to create a project, manage your project, and collaborate on someone else’s project on GitHub.</p>
+
+<p class="text-muted" style="font-color:white;">“Work on projects with people anywhere in the world with tools for coordinating and organizing your projects”</p>
+                                    <a href="https://www.meetup.com/sketchcity/events/237322956/" target="_blank"><img src="img/register.png"></a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item">
+                                    <img src="img/event-3.png">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+                                    <h3 style="font-color:white;">Intro to <br />R Workshop</h3>
+                                    <p class="text-muted" style="font-color:white;">You want to solve problems with data. You’ll need to be ready to go to town in 3 core skill areas: data manipulation, data visualization, and statistics. You’ll need to learn a programming language, ideally just _one_ language. That’s where R comes in. </p>
+
+<p class="text-muted" style="font-color:white;">What’s R? R is an open source programming language and software environment for statistical computing and graphics. Let's get you doing cool things with R and RStudio.</p>
+
+
+<p class="text-muted" style="font-color:white;">“You want to solve problems with data. Meet R, your new secret weapon.”
+</p>
+                                  <a href="https://www.meetup.com/sketchcity/events/237324584/" target="_blank"><img src="img/register.png"></a>
+
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="feature-item">
+                                    <img src="img/event-4.png">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+
+
+
+--
+<h3 style="font-color:white;">Intro to Web Scraping</h3>
+<p class="text-muted" style="font-color:white;">Many interesting projects start with the same raw material, data. Web scraping is a great way to grab the data you want in a useable form.</p>
+
+<p class="text-muted" style="font-color:white;">By the end of this workshop, you will know how to search for the data you want, make a simple web scraper, and save the data to a spreadsheet on your computer.</p>
+
+<p class="text-muted" style="font-color:white;">“Search and grab data from the internet for your personal and civic hacking projects”</p>
+<a href="https://www.meetup.com/sketchcity/events/237324596/" target="_blank"><img src="img/register.png"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item">
+                                    <img src="img/event-5.png">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+
+                                    <h3 style="font-color:white;">Intro to Project Ideation and Scoping for Hackathons</h3>
+                                    <p class="text-muted" style="font-color:white;">Description TBD.</p>
+                                    <a href="https://www.meetup.com/sketchcity/events/237324607/" target="_blank"><img src="img/register.png"></a>
+
+                                </div>
+                            </div>
+
+                          </row>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="video" class="2015video" style="background-color:#ddd;">
+      <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DNWHZRafoXI" frameborder="0" allowfullscreen></iframe>
+</center>
+</section>
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <h2 style="color:white;font-weight:bold;text-transform:uppercase;">Fire up your collaboration engines!</h2>
+            <ul class="list-inline list-social">
+
+                <li class="social-facebook">
+                    <a href="http://facebook.com/sketchcity"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-twitter">
+                    <a href="http://twitter.com/sketchcity"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="social-google-plus">
+                    <a href="http://sketchcity.herokuapp.com/"><i class="fa fa-slack"></i></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="#"><i class="fa fa-meetup" aria-hidden="true"></i></a>
+                </li>
+                <li class="social-twitter">
+                    <a href="mailto:info@sketchcity.org"><i class="fa fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Sketch City. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="mailto:info@sketchcity.org">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>
