@@ -22,6 +22,9 @@ header, footer {
 
 .navbar-toggle {
   margin: 6px;
+  font-size: inherit;
+  padding: 5px 15px;
+  line-height: 1em;
 }
 
 header svg {
@@ -74,7 +77,7 @@ header svg {
 }
 
 .logo {
-  margin-top: -30px;
+  margin-top: -1.8em;
 }
 
 .circle-hiding #mainNav {
@@ -89,10 +92,14 @@ header svg {
   color: #FFFFFF;
 }
 
+.navbar-brand {
+  font-size: inherit;
+}
+
 .logo::before,
 .logo::after {
-  line-height: 83px;
-  font-size: 28px;
+  line-height: 3.2em;
+  font-size: 1.4em;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -184,7 +191,7 @@ header svg {
   font-size: inherit;
   padding: 5px 15px;
   line-height: 1em;
-  margin-left: 8px;
+  margin-left: 30px;
 }
 
 
@@ -313,16 +320,26 @@ header .btn {
 }
 
 @media (max-width: 767px) {
-  .container > .navbar-collapse.in,
-  .container-fluid > .navbar-collapse.in,
-  .container > .navbar-collapse.collapsing,
-  .container-fluid > .navbar-collapse.collapsing {
+  .container .navbar-collapse.in,
+  .container-fluid .navbar-collapse.in,
+  .container .navbar-collapse.collapsing,
+  .container-fluid .navbar-collapse.collapsing {
     width: 118px;
     margin-left: auto;
     text-align: right;
     padding-left: 6px;
     padding-right: 6px;
     background-color: rgba(2, 10, 65, 1);
+  }
+
+  #menu {
+    margin-top: 0;
+  }
+
+  #menu.nav > li > a{
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .circle-hiding #mainNav {
@@ -401,6 +418,9 @@ header .btn {
     margin-right: 0;
     // font-size: 18px;
   }
+  section.features .section-heading {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -412,6 +432,44 @@ header .btn {
     height: 1.5em;
     width: 1.5em;
     line-height: 1.5em;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  section.contact ul.list-social li a {
+    font-size: 28px;
+  }
+
+  .event-dates {
+    display: block;
+  }
+
+  #mainNav {
+    font-size: 16px;
+  }
+
+  .logo::after {
+    left: 92px;
+  }
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .logo svg {
+    transform: translate(-5px, -78px) scale(0.8);
+  }
+
+  .circle-hiding .logo svg {
+    transform: translate(-5px, -12px) scale(0.8);
   }
 }
 
