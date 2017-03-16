@@ -1,5 +1,4 @@
 body {
-  // background-color: #241f20;
   background-color: rgba(2, 10, 65, 1);
   background-image: url(../img/contact_bg-v9.jpg);
   background-size: cover;
@@ -18,7 +17,7 @@ header, footer {
 }
 
 .bg-primary {
-  background-attachment: fixed;
+  background: transparent;
 }
 
 .navbar-toggle {
@@ -94,19 +93,23 @@ header svg {
 .logo::after {
   line-height: 83px;
   font-size: 28px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .logo::before {
   font-family: 'GT-Pressura-Mono-Light', monospace;
-  font-weight: 100;
+  font-weight: normal;
   content: 'Houston';
   color: #FFFFFF;
 }
 
 .logo::after {
-  font-family: 'GT-Pressura-Regular', sans-serif;
+  font-family: 'GT-Pressura-Bold', sans-serif;
   font-weight: normal;
-  content: 'Hackathon';
+  content: ' Hackathon';
   color: #E55454;
 }
 
@@ -174,6 +177,7 @@ header svg {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: rgba(200, 200, 200, 1);
+  // color: #E55454;
 }
 
 .navbar-btn {
@@ -244,7 +248,7 @@ a:not([class]) {
 
 a:not([class]):hover {
   // color: rgba(229, 84, 84, 1);
-  color: rgba(6,36,193, 1);
+  color: rgba(6, 36, 193, 1);
 }
 
 header .btn {
@@ -286,14 +290,14 @@ header .btn {
 .list-group-item .btn.btn-outline:hover,
 .list-group-item .btn.btn-outline:focus,
 .list-group-item:hover .btn.btn-outline {
-  color: rgba(6,36,193, 1);
-  border-color: rgba(6,36,193, 1);
+  color: rgba(6, 36, 193, 1);
+  border-color: rgba(6, 36, 193, 1);
   background-color: rgba(200, 200, 200, 1);
   outline: none;
 
-  -webkit-box-shadow: 0.45em 0.45em 0px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0.45em 0.45em 0px 0px rgba(0,0,0,1);
-  box-shadow: 0.45em 0.45em 0px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0.45em 0.45em 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0.45em 0.45em 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0.45em 0.45em 0px 0px rgba(0, 0, 0, 1);
 }
 
 // .btn-outline:hover,
@@ -308,7 +312,7 @@ header .btn {
   font-size: 1.2em;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .container > .navbar-collapse.in,
   .container-fluid > .navbar-collapse.in,
   .container > .navbar-collapse.collapsing,
@@ -377,6 +381,12 @@ header .btn {
   margin-bottom: 20px;
 }
 
+@media (max-width: 420px) {
+  .btn-xl {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 1200px) {
   .youtube-video-thumb {
     margin-bottom: 20px;
@@ -388,6 +398,8 @@ header .btn {
 
   header .btn {
     margin-bottom: 20px;
+    margin-right: 0;
+    // font-size: 18px;
   }
 }
 
