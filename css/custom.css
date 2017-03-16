@@ -50,7 +50,7 @@ header svg {
 #mainNav {
   border-color: transparent;
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
 }
 
 .logo svg {
@@ -308,7 +308,7 @@ header .btn {
   font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 766px) {
   .container > .navbar-collapse.in,
   .container-fluid > .navbar-collapse.in,
   .container > .navbar-collapse.collapsing,
@@ -318,7 +318,30 @@ header .btn {
     text-align: right;
     padding-left: 6px;
     padding-right: 6px;
-  } 
+    background-color: rgba(2, 10, 65, 1);
+  }
+
+  .circle-hiding #mainNav {
+    background-color: transparent;
+  }
+
+  .circle-hiding #mainNav .navbar-header {
+    background-color: rgba(2, 10, 65, 1);
+  }
+
+  .logo::before,
+  .logo::after {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .logo svg {
+    z-index: 0;
+  }
+
+  .logo::after {
+    left: 118px;
+  }
 }
 
 .list-group-item {
