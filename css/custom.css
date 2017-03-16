@@ -228,6 +228,11 @@ header svg {
   margin-right: auto;
 }
 
+#workshops a:not([class]):hover,
+#workshops a:not([class]):focus {
+  color: #E55454;
+}
+
 .features .feature {
   margin-bottom: 100px;
 }

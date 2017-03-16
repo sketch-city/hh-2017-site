@@ -113,6 +113,10 @@ inView('header')
   .on('enter', setCircleShowing)
   .on('exit', setCircleHiding);
 
+if (!inView.is(document.querySelector('header'))) {
+  setCircleHiding();
+}
+
 var player;
 var youtubeButton = document.getElementById('youtube-play');
 function onYouTubeIframeAPIReady() {
