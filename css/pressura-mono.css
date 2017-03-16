@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'GT-Pressura-Light';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Light-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Light-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Regular';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Regular-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Regular-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Bold';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Bold-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Bold-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Light';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Light-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Light-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Regular';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Regular-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Regular-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Bold';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Pressura-Mono-Bold-Italic';
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold-Italic.woff") format("woff"), url("https://www.grillitype.com/fonts/gt-pressura/GT-Pressura-Mono-Bold-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}

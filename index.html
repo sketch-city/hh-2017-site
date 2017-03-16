@@ -3,341 +3,464 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="evan oneil">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="evan oneil">
   
-    <!-- OG section -->
-  <meta property="og:title" content="The Rock" />
+  <!-- OG section -->
+  <meta property="og:title" content="Houston Hackathon 2017" />
   <meta property="og:description" content="24 hours to help solve civic issues together at Houston Technology Center
-      Saturday May 20 + Sunday 21" />
+    Saturday May 20 + Sunday 21" />
   <meta property="og:url" content="http://houstonhackathon.com" />
   <meta property="og:image" content="./ms-icon-150x150.png" />
 
 
-    <title>Houston Hackathon 2017</title>
+  <title>Houston Hackathon 2017</title>
   
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/pressura-mono.css">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
-    <!-- Theme CSS -->
-    <link href="css/new-age.css" rel="stylesheet">
 
-    <!-- Google Analytics -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-9173062-12', 'auto');
-  ga('send', 'pageview');
-</script>
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Theme CSS -->
+  <link href="css/new-age.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-9173062-12', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-            </div>
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <!-- <img src="img/logo.png"> -->
+          <div id="logo" class="logo">
+            <svg id="logo-image" width="96" height="96"></svg>
+          </div>
+        </a>
+        <button type="button" class="navbar-toggle collapsed btn btn-outline" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- <li>
-                        <a class="page-scroll" href="#download">Courses</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#workshops">Workshops</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <a class="btn btn-outline navbar-btn navbar-right" href="https://www.meetup.com/sketchcity/events/237324638/" target="_blank">RSVP</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#about-and-faq">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#workshops">Workshops</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <header>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-5 col-xs-1">
+          <svg id="animatey" width="800" height="800"></svg>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <div class="col-sm-7 col-xs-10">
+          <div class="header-content">
 
-    <header>
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-sm-3 col-xs-1">
-                      <div class="header-content-inner">
-
-
-                        <!-- the animatey thing -->
-                        <svg width="700" height="700"></svg>
-                        <script src="https://d3js.org/d3.v4.min.js"></script>
-                        <script>
-                          var svg = d3.select("svg"),
-                          width = +svg.attr("width"),
-                          height = +svg.attr("height"),
-                          angles = d3.range(0, 2 * Math.PI, Math.PI / 200);
-
-                          var path = svg.append("g")
-
-                          .attr("transform", "translate(" + width / 3 + "," + height / 1.5 + ")")
-                          .attr("fill", "none")
-                          .attr("stroke-width", 10)
-                          .attr("stroke-linejoin", "round")
-                          .selectAll("path")
-                          .data(["#0088fe", "#0462d7", "#041781"])
-                          .enter().append("path")
-                          .attr("stroke", function(d) { return d; })
-                          // .style("mix-blend-mode", "darken")
-
-                          .datum(function(d, i) {
-                            return d3.radialLine()
-                            .curve(d3.curveLinearClosed)
-                            .angle(function(a) { return a; })
-                            .radius(function(a) {
-                            var t = d3.now() / 1000;
-                            return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
-                            });
-                          });
-
-                          d3.timer(function() {
-                            path.attr("d", function(d) {
-                              return d(angles);
-                            });
-                          });
-
-                          </script>
-
-                </div>
-                </div>
-
-                <div class="col-sm-2 col-xs-1">
-                      <div class="header-content-inner">
-<p></p>
-                      </div>
-                    </div>
-                <div class="col-sm-7 col-xs-10">
-                    <div class="header-content">
-
-                        <div class="header-content-inner" style="color:white;">
-                            <h1>24 hours to help solve civic issues together</h1>
-                            <h2>at Houston Technology Center</h2>
-                            <br />
-                            <p>Saturday May 20 + Sunday 21</p>
-                            <br />
-                            <a href="http://sketchcity.us13.list-manage.com/subscribe/post?u=21f25fae001e08a3b245e67bd&amp;id=eaba84a7b1" target="_blank"><img src="img/sub.png" style="margin:10px; height:5%; width:auto;"></a><a href="https://www.meetup.com/sketchcity/events/237324638/" target="_blank"><img src="img/rsvp.png" style="margin:10px; height:5%; width:auto;"></a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-2 col-xs-1">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="header-content-inner" style="color:white;">
+              <h1>24 hours to help solve civic issues together</h1>
+              <h2>at Houston Technology Center</h2>
+              <br />
+              <p>Saturday May 20 + Sunday 21</p>
+              <br />
+              <a href="http://sketchcity.us13.list-manage.com/subscribe/post?u=21f25fae001e08a3b245e67bd&amp;id=eaba84a7b1" target="_blank" class="btn btn-outline btn-xl">
+                Subscribe for updates
+              </a><a href="https://www.meetup.com/sketchcity/events/237324638/" target="_blank" class="btn btn-outline btn-xl">
+                RSVP on Meetup
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+
+  <section id="about-and-faq" class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="section-heading">Let's improve Houston together.</h1>
+        </div>
+      </div>
+      <div class="row feature">
+
+        <div class="col-lg-6">
+          <div class="center-wrapper youtube-video-thumb embed-responsive embed-responsive-16by9">
+            <button id="youtube-play" class="ytp-large-play-button ytp-button" aria-label="Watch Houston Hackathon - May 16-17, 2015"><svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%"><path class="ytp-large-play-button-bg" d="m .66,37.62 c 0,0 .66,4.70 2.70,6.77 2.58,2.71 5.98,2.63 7.49,2.91 5.43,.52 23.10,.68 23.12,.68 .00,-1.3e-5 14.29,-0.02 23.81,-0.71 1.32,-0.15 4.22,-0.17 6.81,-2.89 2.03,-2.07 2.70,-6.77 2.70,-6.77 0,0 .67,-5.52 .67,-11.04 l 0,-5.17 c 0,-5.52 -0.67,-11.04 -0.67,-11.04 0,0 -0.66,-4.70 -2.70,-6.77 C 62.03,.86 59.13,.84 57.80,.69 48.28,0 34.00,0 34.00,0 33.97,0 19.69,0 10.18,.69 8.85,.84 5.95,.86 3.36,3.58 1.32,5.65 .66,10.35 .66,10.35 c 0,0 -0.55,4.50 -0.66,9.45 l 0,8.36 c .10,4.94 .66,9.45 .66,9.45 z" fill="#1f1f1e" fill-opacity="0.81"></path>
+            <path class="ytp-large-play-button-main" d="m 26.96,13.67 18.37,9.62 -18.37,9.55 -0.00,-19.17 z" fill="#fff"></path>
+            <path class="ytp-large-play-button-shadow" d="M 45.02,23.46 45.32,23.28 26.96,13.67 43.32,24.34 45.02,23.46 z" fill="#ccc"></path></svg></button>
+
+            <div id="player" class="embed-responsive-item"></div>
+          </div>
         </div>
 
 
-    </header>
+        <div class="col-lg-6">
+          <p class="intro">Join us at this free event, where we'll team up to tackle problems affecting the greater Houston public — such as traffic information, voter registration, or recycling programs, just <a href="https://github.com/sketch-city/project-ideas/issues" target="_blank">to name a few</a>.</p>
+
+          <a href="./faq" target="_blank" class="btn btn-outline btn-xl">
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+<!--       <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="section-heading">Who should come?</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <h1>Designers</h1>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h1>Activists</h1>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h1>Programmers</h1>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h1>You!</h1>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section id="workshops" class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h2>Get Involved</h2>
+            <p>Polish up your skills or learn how to "Hackathon" with these fun, optional, free events — any skill level welcome! Then take a look at some proposed Hackathon projects or add your own ideas.</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <h1>Project Ideas</h1>
+          <p>Find a project that interests you or add your own. Join the discussion to find fellow teammates.</p>
+
+          <p>See all projects<br/><a target="_blank" href="https://github.com/sketch-city/project-ideas/issues">here</a>.</p>
+
+          <div class="list-group">
+
+            <a target="_blank" href="https://github.com/sketch-city/project-ideas/issues/80" class="list-group-item">
+              <h4>311 Data Project Ideas</h4>
+              <span class="btn btn-outline">Discuss here</span>
+            </a>
 
 
-    <section id="workshops" class="features">
-        <div class="container">
+
+            <a target="_blank" href="https://github.com/sketch-city/project-ideas/issues/82" class="list-group-item">
+              <h4>Houston Toll Calculator</h4>
+              <span class="btn btn-outline">Discuss here</span>
+            </a>
+
+
+
+            <a target="_blank" href="https://github.com/sketch-city/project-ideas/issues/83" class="list-group-item">
+              <h4>Safest Route App</h4>
+              <span class="btn btn-outline">Discuss here</span>
+            </a>
+
+
+
+            <a target="_blank" href="https://github.com/sketch-city/project-ideas/issues/79" class="list-group-item">
+              <h4>Local Direct Donation App</h4>
+              <span class="btn btn-outline">Discuss here</span>
+            </a>
+
+
+
+            <a target="_blank" href="https://github.com/sketch-city/project-ideas/issues/81" class="list-group-item">
+              <h4>Adopt a Storm Drain</h4>
+              <span class="btn btn-outline">Discuss here</span>
+            </a>
+
+
+
+          </div>
+
+        </div>
+        <div class="col-lg-4 text-center">
+          <h1>Weekly Hack Nights</h1>
+          <p>Get a taste of how a Hackathon works with themed mini hack nights.</p>
+          <p>Hack Nights are hosted at<br><a target="_blank" href="https://www.google.com/maps/dir/''/the+leonel+castillo/data=!4m5!4m4!1m0!1m2!1m1!1s0x8640b8cc1b7a258f:0xcc8f224de42d532a?sa=X&ved=0ahUKEwiZqcLhntrSAhUD4YMKHTQ_AKYQ9RcIeTAL">Leonel Castillo Center</a>.</p>
+
+          <div class="list-group">
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237322810/" class="list-group-item">
+              <h4>data.world Data Exploration</h4>
+              <i>March 21, Tuesday 6pm - 8pm</i>
+              <p class="details">We are going to spend some time exploring the new data social network data.world together.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237322922/" class="list-group-item">
+              <h4>Democracy Lightning Talks</h4>
+              <i>March 28, Tuesday 6pm - 8pm</i>
+              <p class="details">We'll get some of the best democracy-focused projects in the room to enlighten you quickly. Then we'll brainstorm ideas for the hackathon.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237324417/" class="list-group-item">
+              <h4>Houston Recovery Center data overview</h4>
+              <i>April 4, Tuesday 6pm - 8pm</i>
+              <p class="details">We'll take a preliminary look at the Houston Recovery Center dataset to prep for the data jam on Saturday.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237324545/" class="list-group-item">
+              <h4>Refugee Assistance Hack Night</h4>
+              <i>April 11, Tuesday 6pm - 8pm</i>
+              <p class="details">Learn about how you can work on tech projects to help refugees who have resettled to Houston.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+
+          </div>
+
+        </div>
+        <div class="col-lg-4 text-center">
+          <h1>Workshops</h1>
+          <p>Learn helpful hacking skills in half-day sessions with our staff and volunteers.</p>
+          <p>Workshops are hosted at<br><a target="_blank" href="https://www.google.com/maps/dir/''/the+iron+yard+houston/data=!4m5!4m4!1m0!1m2!1m1!1s0x8640bee1bd9e3dcd:0x5e699e5b9469f142?sa=X&ved=0ahUKEwjP5oqXnNrSAhXlxYMKHaecCTYQ9RcIkwEwCw">The Iron Yard</a>.</p>
+
+          <div class="list-group">
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237322880/" class="list-group-item">
+              <h4>Intro to Commandline</h4>
+              <i>March 18, Saturday 9am - 1pm</i>
+              <p class="details">Never be intimidated by that black window with the blinky prompt ever again!</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237322956/" class="list-group-item">
+              <h4>Intro to Git &amp; Github</h4>
+              <i>March 25, Saturday 9am - 1pm</i>
+              <p class="details">Work on projects with people anywhere in the world with tools for coordinating and organizing your projects.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237324584/" class="list-group-item">
+              <h4>Intro to R</h4>
+              <i>April 15, Saturday 9am - 1pm</i>
+              <p class="details">You want to solve problems with data. Meet R, your new secret weapon.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237324596/" class="list-group-item">
+              <h4>Intro to Web Scraping</h4>
+              <i>April 22, Saturday 9am - 1pm</i>
+              <p class="details">Search and grab data from the internet for your personal and civic hacking projects.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+            <a target="_blank" href="https://www.meetup.com/sketchcity/events/237324607/" class="list-group-item">
+              <h4>Intro to Project Ideation &amp; Scoping for Hackathons</h4>
+              <i>May 6, Saturday 9am - 1pm</i>
+              <p class="details">Find out how you come up with good hackathon ideas, scope the work appropriately, and keep the project on task throughout the event.</p>
+              <span class="btn btn-outline">Register here</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!--         <div class="col-md-12">
+          <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Get Ahead with Workshops</h2>
-                        <p class="text-muted">They're all free</p>
-                        <hr>
-                    </div>
+
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <img src="img/event-1.png">
+
+                  <h3>Intro to CLI Workshop</h3>
+                  
+<p class="text-muted">Never be intimidated by that black window with the blinky prompt ever again!</p>
+                  <a href="https://www.meetup.com/sketchcity/events/237322880/
+" target="_blank" class="btn btn-outline btn-xl">Register here</a>
+
                 </div>
-            </div>
+              </div>
 
-                <div class="col-md-12">
-                    <div class="container-fluid">
-                        <div class="row">
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <img src="img/event-2.png">
 
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <img src="img/event-1.png">
-                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+                  <h3>Intro to <br />Git/Github</h3>
+                  
+                  <p class="text-muted">Work on projects with people anywhere in the world with tools for coordinating and organizing your projects</p>
+                  <a href="https://www.meetup.com/sketchcity/events/237322956/" target="_blank" class="btn btn-outline btn-xl">Register here</a>
 
-                                    <h3 style="font-color:white;">Intro to CLI Workshop</h3>
-                                    
-<p class="text-muted" style="font-color:white;">“Never be intimidated by that black window with the blinky prompt ever again!”</p>
-                                    <a href="https://www.meetup.com/sketchcity/events/237322880/
-" target="_blank"><img src="img/register.png"></a>
+                </div>
+              </div>
 
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <img src="img/event-2.png">
-                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
-
-                                    <h3 style="font-color:white;">Intro to <br />Git/Github</h3>
-                                    
-                                    <p class="text-muted" style="font-color:white;">“Work on projects with people anywhere in the world with tools for coordinating and organizing your projects”</p>
-                                    <a href="https://www.meetup.com/sketchcity/events/237322956/" target="_blank"><img src="img/register.png"></a>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <img src="img/event-3.png">
-                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
-                                    <h3 style="font-color:white;">Intro to <br />R Workshop</h3>
-                                    
-<p class="text-muted" style="font-color:white;">“You want to solve problems with data. Meet R, your new secret weapon.”
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <img src="img/event-3.png">
+                  <i class="icon-screen-smartphone text-primary"></i>
+                  <h3>Intro to <br />R Workshop</h3>
+                  
+<p class="text-muted">You want to solve problems with data. Meet R, your new secret weapon.
 </p>
-                                  <a href="https://www.meetup.com/sketchcity/events/237324584/" target="_blank"><img src="img/register.png"></a>
+                  <a href="https://www.meetup.com/sketchcity/events/237324584/" target="_blank" class="btn btn-outline btn-xl">Register here</a>
 
-                                </div>
-                            </div>
-
-                          </div>
-                          <div class="row">
-
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <img src="img/event-4.png">
-                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
-
-
---
-<h3 style="font-color:white;">Intro to Web Scraping</h3>
-
-<p class="text-muted" style="font-color:white;">“Search and grab data from the internet for your personal and civic hacking projects”</p>
-<a href="https://www.meetup.com/sketchcity/events/237324596/" target="_blank"><img src="img/register.png"></a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <img src="img/event-5.png">
-                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
-
-                                    <h3 style="font-color:white;">Intro to Project Ideation and Scoping for Hackathons</h3>
-                                    <p class="text-muted" style="font-color:white;">Description TBD.</p>
-                                    <a href="https://www.meetup.com/sketchcity/events/237324607/" target="_blank"><img src="img/register.png"></a>
-
-                                </div>
-                            </div>
-
-                          </row>
-
-                    </div>
                 </div>
-            </div>
-    </section>
+              </div>
 
+              </div>
+              <div class="row">
 
-    <section id="video" class="2015video" style="background-color:#ddd;">
-      <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DNWHZRafoXI" frameborder="0" allowfullscreen></iframe>
-</center>
-</section>
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <img src="img/event-4.png">
 
-    <section id="contact" class="contact bg-primary">
-        <div class="container">
-            <h2 style="color:white;font-weight:bold;text-transform:uppercase;">Fire up your collaboration engines!</h2>
-            <ul class="list-inline list-social">
+<h3>Intro to Web Scraping</h3>
 
-                <li class="social-facebook">
-                    <a target="_blank" href="https://www.facebook.com/groups/openhoustongov/"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-twitter">
-                    <a target="_blank" href="http://github.com/sketch-city"><i class="fa fa-github"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a target="_blank" href="http://sketchcity.herokuapp.com/"><i class="fa fa-slack"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a target="_blank" href="https://www.meetup.com/sketchcity/"><i class="fa fa-meetup" aria-hidden="true"></i></a>
-                </li>
-                <li class="social-twitter">
-                    <a target="_blank" href="mailto:info@sketchcity.org"><i class="fa fa-envelope"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
+<p class="text-muted">Search and grab data from the internet for your personal and civic hacking projects</p>
+<a href="https://www.meetup.com/sketchcity/events/237324596/" target="_blank" class="btn btn-outline btn-xl">Register here</a>
+                </div>
+              </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2017 Sketch City. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="mailto:info@sketchcity.org">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <img src="img/event-5.png">
+                  <h3>Intro to Project Ideation and Scoping for Hackathons</h3>
+                  <p class="text-muted">Description TBD.</p>
+                  <a href="https://www.meetup.com/sketchcity/events/237324607/" target="_blank" class="btn btn-outline btn-xl">Register here</a>
+                </div>
+              </div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+              </row>
+          </div>
+        </div> -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <section id="contact" class="contact bg-primary">
+    <div class="container">
+      <h2>Fire up your collaboration engines!</h2>
+      <ul class="list-inline list-social">
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <li class="btn btn-outline">
+          <a target="_blank" href="https://www.facebook.com/groups/openhoustongov/"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="btn btn-outline">
+          <a target="_blank" href="http://github.com/sketch-city"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="btn btn-outline">
+          <a target="_blank" href="http://sketchcity.herokuapp.com/"><i class="fa fa-slack"></i></a>
+        </li>
+        <li class="btn btn-outline">
+          <a target="_blank" href="https://www.meetup.com/sketchcity/"><i class="fa fa-meetup" aria-hidden="true"></i></a>
+        </li>
+        <li class="btn btn-outline">
+          <a target="_blank" href="mailto:info@sketchcity.org"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2017 Sketch City. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li>
+          <a href="mailto:info@sketchcity.org">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+
+  <script type="text/javascript" src="https://unpkg.com/in-view/dist/in-view.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/lodash/lodash.min.js"></script>
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/new-age.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
