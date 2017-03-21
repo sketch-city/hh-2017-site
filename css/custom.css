@@ -5,6 +5,12 @@ body {
   background-attachment: fixed;
 }
 
+body p {
+  // font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 300;
+}
+
 header, footer {
   background-color: transparent;
   overflow: hidden;
