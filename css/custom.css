@@ -37,6 +37,7 @@ header svg {
 .navbar-nav > li > a {
   padding-top: 7px;
   padding-bottom: 7px;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -233,7 +234,24 @@ header svg {
   // background-image: linear-gradient(to right, rgba(1, 12, 65, 1) -70%, rgba(3, 23, 128, 1) 40%, rgba(39, 29, 118, 1) 75%, rgba(233, 61, 61, 1) 150%);
 }
 
-#workshops .section-heading {
+#workshops .container-fluid {
+  max-width: 1170px;
+}
+
+#workshops .list-group {
+  max-width: 480px;
+  margin: auto;
+}
+
+@media (min-width: 960px) {
+  #workshops .col-md-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+}
+
+#workshops .section-heading,
+#workshops p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -484,4 +502,21 @@ header .btn {
 
 #faq .list-group-item {
   border: none;
+}
+
+#faq p {
+  font-size: 1.2em;
+}
+
+.faq-item {
+  padding: 20px 0 20px 0;
+}
+
+.faq-item h1,
+.faq-item h2,
+.faq-item h3,
+.faq-item h4,
+.faq-item h5,
+.faq-item h6 {
+  color: #E55454;
 }
