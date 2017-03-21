@@ -519,4 +519,5 @@ header .btn {
 .faq-item h5,
 .faq-item h6 {
   color: #E55454;
+  font-weight: 500;
 }
