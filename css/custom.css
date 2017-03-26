@@ -502,6 +502,25 @@ header .btn {
   }
 }
 
+@media (max-width: 320px) {
+  body {
+    font-size: 16px;
+  }
+
+  #mainNav .container {
+    padding-left: 10px;
+  }
+
+  .navbar-header .navbar-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .navbar-header .navbar-toggle + .navbar-toggle {
+    margin-right: 1px;
+  }
+}
+
 #faq {
   background: #FFFFFF;
 }
