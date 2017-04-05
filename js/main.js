@@ -94,10 +94,13 @@ function setCircleHiding() {
   document.body.classList.remove('circle-showing');
 }
 
-var headerAnimation = makeHeaderAnimation('#animatey');
-headerAnimation.initialize();
-headerAnimation.resize();
-headerAnimation.animate();
+if (document.getElementById('animatey')) {
+  var headerAnimation = makeHeaderAnimation('#animatey');
+  headerAnimation.initialize();
+  headerAnimation.resize();
+  headerAnimation.animate();
+}
+
 
 var logo = makeLogo('#logo-image', _.concat([{ stroke: 5,
   cx: 0,
@@ -113,7 +116,7 @@ inView('header')
   .on('enter', setCircleShowing)
   .on('exit', setCircleHiding);
 
-if (!inView.is(document.querySelector('header'))) {
+if (document.querySelector('header') && !inView.is(document.querySelector('header'))) {
   setCircleHiding();
 }
 

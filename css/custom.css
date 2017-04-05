@@ -58,7 +58,7 @@ header svg {
 
 #mainNav {
   border-color: transparent;
-  background-color: transparent;
+  background-color: rgba(2, 10, 65, 1);
   color: #FFFFFF;
 }
 
