@@ -234,7 +234,7 @@ header svg {
   margin-bottom: 60px;
 }
 
-#workshops, #agenda {
+#workshops, #schedule {
   color: #FFF;
   background-color: rgba(2, 10, 65, 1);
   background-image: none;
@@ -346,7 +346,7 @@ header .btn {
   font-size: 1.2em;
 }
 
-#agenda {
+#schedule {
   background-image: url(../img/hh2016.gif);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -354,27 +354,27 @@ header .btn {
   background-size: 42%;
 }
 
-#agenda ul {
+#schedule ul {
   padding: 0;
   list-style: none;
 }
 
-#agenda li {
+#schedule li {
   margin-bottom: 2em;
   display: block;
 }
 
-#agenda li::after {
+#schedule li::after {
   clear: both;  
   display: table;
   content: " ";
 }
 
-#agenda h1, #agenda h2 {
+#schedule h1, #schedule h2 {
   background: rgba(2, 10, 65, 0.9);
 }
 
-#agenda .time {
+#schedule .time {
   text-align: right;
   color: #E55454;
   font-weight: 200;
@@ -382,17 +382,17 @@ header .btn {
   background: rgba(2, 10, 65, 0.9);
 }
 
-#agenda .description {
+#schedule .description {
   box-sizing: border-box;
   background: rgba(2, 10, 65, 0.9);
 }
 
-#agenda .description strong {
+#schedule .description strong {
   color: #E55454;
   font-weight: 500;
 }
 
-#agenda .fixed-top {
+#schedule .fixed-top {
   position: fixed;
   width: 449px;
   left: inherit;
@@ -400,11 +400,11 @@ header .btn {
   top: 80px;
 }
 
-#agenda {
+#schedule {
   padding: 0;
 }
 
-#agenda .schedule {
+#schedule .schedule {
   padding: 100px 0;
 }
 
@@ -515,20 +515,20 @@ header .btn {
 }
 
 @media (max-width: 992px) {
-  #agenda {
+  #schedule {
     background-position: center center;
     background-size: cover;
   }
 
-  #agenda .container-fluid {
+  #schedule .container-fluid {
     background-color: rgba(2, 10, 65, 0.8);
   }
 
-  #agenda .schedule {
+  #schedule .schedule {
     padding: 20px;
   }
 
-  #agenda h1, #agenda h2 {
+  #schedule h1, #schedule h2 {
     background-color: transparent;
   }
 
