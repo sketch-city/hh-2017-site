@@ -3,12 +3,15 @@ body {
   background-image: url(../img/contact_bg-v9.jpg);
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 body p {
-  // font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-  font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 300;
+}
+
+.nav a, .btn {
+  font-family: 'GT-Pressura-Mono-Light', monospace;
 }
 
 header, footer {
@@ -231,7 +234,7 @@ header svg {
   margin-bottom: 60px;
 }
 
-#workshops {
+#workshops, #agenda {
   color: #FFF;
   background-color: rgba(2, 10, 65, 1);
   background-image: none;
@@ -343,6 +346,70 @@ header .btn {
   font-size: 1.2em;
 }
 
+#agenda {
+  background-image: url(../img/hh2016.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+  background-size: 42%;
+}
+
+#agenda ul {
+  padding: 0;
+  list-style: none;
+}
+
+#agenda li {
+  margin-bottom: 2em;
+  display: block;
+}
+
+#agenda li::after {
+  clear: both;  
+  display: table;
+  content: " ";
+}
+
+#agenda h1, #agenda h2 {
+  background: rgba(2, 10, 65, 0.9);
+}
+
+#agenda .time {
+  text-align: right;
+  color: #E55454;
+  font-weight: 200;
+  font-family: 'GT-Pressura-Mono-Light', monospace;
+  background: rgba(2, 10, 65, 0.9);
+}
+
+#agenda .description {
+  box-sizing: border-box;
+  background: rgba(2, 10, 65, 0.9);
+}
+
+#agenda .description strong {
+  color: #E55454;
+  font-weight: 500;
+}
+
+#agenda .fixed-top {
+  position: fixed;
+  width: 449px;
+  left: inherit;
+  height: 250px;
+  top: 80px;
+}
+
+#agenda {
+  padding: 0;
+}
+
+#agenda .schedule {
+  padding: 100px 0;
+}
+
+
+
 @media (max-width: 767px) {
   .container .navbar-collapse.in,
   .container-fluid .navbar-collapse.in,
@@ -444,6 +511,36 @@ header .btn {
   }
   section.features .section-heading {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  #agenda {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #agenda .container-fluid {
+    background-color: rgba(2, 10, 65, 0.8);
+  }
+
+  #agenda .schedule {
+    padding: 20px;
+  }
+
+  #agenda h1, #agenda h2 {
+    background-color: transparent;
+  }
+
+  #mainNav .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
