@@ -138,16 +138,19 @@ function onPlayerReady(playerEvent) {
     youtubeButton.parentNode.classList.add('active');
   });
 }
-
-window.onresize = function() {
-  headerAnimation.resize();
-}
-
-if(window.location.hash) {
-  var $topic = $(window.location.hash);
-  if($topic) {
-    $('html, body').stop().animate({
-      scrollTop: ($topic.offset().top - 50)
-    }, 1250, 'easeInOutExpo');
+$(function() {
+  window.onresize = function() {
+    headerAnimation.resize();
   }
-}
+
+  if(window.location.hash) {
+    var $topic = $(window.location.hash);
+    if($topic) {
+      setTimeout(function(){
+        $('html, body').stop().animate({
+          scrollTop: ($topic.offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+      }, 500);
+    }
+  }
+})
