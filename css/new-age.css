@@ -23,17 +23,12 @@ body {
 }
 body {
   // font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
-  font-family: 'GT-Pressura-Mono-Light', monospace;
   font-size: 20px;
 }
 
 i {
   font-family: 'GT-Pressura-Mono-Light-Italic', monospace;
   font-style: normal;
-}
-
-strong {
-  font-family: 'GT-Pressura-Mono-Bold', monospace;
 }
 
 a {
