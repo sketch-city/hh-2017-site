@@ -142,3 +142,12 @@ function onPlayerReady(playerEvent) {
 window.onresize = function() {
   headerAnimation.resize();
 }
+
+if(window.location.hash) {
+  var $topic = $(window.location.hash);
+  if($topic) {
+    $('html, body').stop().animate({
+      scrollTop: ($topic.offset().top - 50)
+    }, 1250, 'easeInOutExpo');
+  }
+}
