@@ -94,44 +94,67 @@ function setCircleHiding() {
   document.body.classList.remove('circle-showing');
 }
 
-if (document.getElementById('animatey')) {
-  var headerAnimation = makeHeaderAnimation('#animatey');
-  headerAnimation.initialize();
-  headerAnimation.resize();
-  headerAnimation.animate();
-}
-
-
-var logo = makeLogo('#logo-image', _.concat([{ stroke: 5,
-  cx: 0,
-  cy: 0,
-  r: 48,
-  color: 'rgba(2, 10, 65, 1)',
-  fill: 'rgba(2, 10, 65, 1)'
-}], makeLogo.defaultCircles));
-logo.initialize();
-
-inView.offset(50);
-inView('header')
-  .on('enter', setCircleShowing)
-  .on('exit', setCircleHiding);
-
-if (document.querySelector('header') && !inView.is(document.querySelector('header'))) {
-  setCircleHiding();
-}
-
-$(function() {
-  window.onresize = function() {
+function afterPageRender(){
+  if (document.getElementById('animatey')) {
+    var headerAnimation = makeHeaderAnimation('#animatey');
+    headerAnimation.initialize();
     headerAnimation.resize();
-  }
+    headerAnimation.animate();
 
-  if(window.location.hash) {
-    var $topic = $(window.location.hash);
-    if($topic) {
-      $('html, body').stop().animate({
-        scrollTop: ($topic.offset().top - 50)
-      }, 1250, 'easeInOutExpo');
+    window.onresize = function() {
+      headerAnimation.resize();
     }
   }
 
-})
+
+  var logo = makeLogo('#logo-image', _.concat([{ stroke: 5,
+    cx: 0,
+    cy: 0,
+    r: 48,
+    color: 'rgba(2, 10, 65, 1)',
+    fill: 'rgba(2, 10, 65, 1)'
+  }], makeLogo.defaultCircles));
+  logo.initialize();
+
+  inView.offset(50);
+  inView('header')
+    .on('enter', setCircleShowing)
+    .on('exit', setCircleHiding);
+
+  if (document.querySelector('header') && !inView.is(document.querySelector('header'))) {
+    setCircleHiding();
+  }
+}
+
+function goToHash(hash){
+  var $topic = $(hash);
+  if($topic) {
+    $('html, body').stop().animate({
+      scrollTop: ($topic.offset().top - 50)
+    }, 1250, 'easeInOutExpo');
+  }
+}
+
+function getContentPath(){
+  return window.location.href + 'content.html';
+}
+
+
+$(function() {
+
+  var contentContainer = document.getElementById('content');
+
+  $.get(getContentPath())
+    .then(function(response){
+      contentContainer.innerHTML = response;
+      contentContainer.dataset.rendered = true;
+      return response;
+    })
+    .then(afterPageRender)
+    .then(function(){
+      if(window.location.hash) {
+        goToHash(window.location.hash);
+      }
+    });
+
+});
