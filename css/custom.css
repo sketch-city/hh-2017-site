@@ -653,3 +653,18 @@ header .btn {
   height: 100%;
   width: 100%;
 }
+
+#partners {
+  background: #FFF;
+}
+
+#partners .partner a {
+  display: flex;
+  align-items: center;
+  min-height: 160px;
+}
+
+#partners .partner img {
+  margin: auto;
+  max-height: 120px;
+}

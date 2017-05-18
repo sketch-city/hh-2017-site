@@ -138,6 +138,83 @@ function getContentPath(){
   return window.location.origin + window.location.pathname + 'content.html';
 }
 
+function renderPartners(container){
+  var partners = [
+    {
+      img: "City-of-Houston-Seal.gif",
+      url: "http://www.houstontx.gov/"
+    },
+    {
+      img: "controllerseal180.jpg",
+      url: "http://www.houstontx.gov/controller/"
+    },
+    {
+      img: "HCSO-LOGO2.png",
+      url: "http://www.harriscountyso.org/"
+    },
+    {
+      img: "HTC.svg",
+      url: "https://www.houstontech.org/"
+    },
+    {
+      img: "theironyard.png",
+      url: "https://www.theironyard.com/locations/houston.html"
+    },
+    {
+      img: "stationhouston.png",
+      url: "http://stationhouston.com/"
+    },
+    {
+      img: "techforjustice.png",
+      url: "https://www.techforjustice.org"
+    },
+    {
+      img: "code-park.png",
+      url: "https://codeparkhouston.org"
+    },
+    {
+      img: "houston-useRs-med.png",
+      url: "https://houstonusers.github.io/"
+    },
+    {
+      img: "CPanel_logo.svg.png",
+      url: "https://cpanel.com/"
+    },
+    {
+      img: "aiga_hou.png",
+      url: "https://houston.aiga.org/"
+    },
+    {
+      img: "ESRI.jpg",
+      url: "https://houston.aiga.org/"
+    },
+    {
+      img: "HCA.png",
+      url: "https://houstontxcodingacademy.com/"
+    },
+    {
+      img: "houston-data-vis.png",
+      url: "https://houstondatavis.github.io/data-jams/"
+    }
+  ];
+
+  var partnersHTML = partners.map(function(partner, index){
+    var partnerHTML = '<div class="col-xs-4 col-sm-2 partner">\
+    <a href="' + partner.url + '" target="_blank">\
+    <img class="img-responsive" src="' + window.location.origin + '/img/partners/' + partner.img + '">\
+    </a>\
+    </div>';
+    if ((index + 1) % 6 == 0){
+      partnerHTML += '<div class="clearfix hidden-xs"></div>';
+    }
+    if ((index + 1) % 3 == 0){
+      partnerHTML += '<div class="clearfix visible-xs-block"></div>';
+    }
+    return partnerHTML;
+  }).join('');
+
+  container.innerHTML = partnersHTML;
+}
 
 $(function() {
 
@@ -146,6 +223,11 @@ $(function() {
   $.get(getContentPath())
     .then(function(response){
       contentContainer.innerHTML = response;
+
+      if(partnersContainer = document.getElementById('partners-content')){
+        renderPartners(partnersContainer);
+      }
+
       contentContainer.dataset.rendered = true;
       return response;
     })
