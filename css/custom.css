@@ -351,6 +351,7 @@ header .btn {
   background-repeat: no-repeat;
   background-position: 0 50px;
   background-size: 42%;
+  background-image: url(../img/hh2016.gif);
 }
 
 #schedule ul {
@@ -646,4 +647,9 @@ header .btn {
 #form {
   width: 100%;
   height: 2200px;
+}
+
+#content:not([data-rendered=true]) {
+  height: 100%;
+  width: 100%;
 }
