@@ -106,7 +106,6 @@ function afterPageRender(){
     }
   }
 
-
   var logo = makeLogo('#logo-image', _.concat([{ stroke: 5,
     cx: 0,
     cy: 0,
@@ -121,7 +120,7 @@ function afterPageRender(){
     .on('enter', setCircleShowing)
     .on('exit', setCircleHiding);
 
-  if (document.querySelector('header') && !inView.is(document.querySelector('header'))) {
+  if ((document.querySelector('header') && !inView.is(document.querySelector('header'))) || !document.querySelector('header')) {
     setCircleHiding();
   }
 }
@@ -136,7 +135,7 @@ function goToHash(hash){
 }
 
 function getContentPath(){
-  return window.location.href + 'content.html';
+  return window.location.origin + window.location.pathname + 'content.html';
 }
 
 
