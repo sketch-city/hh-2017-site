@@ -243,11 +243,12 @@ function handleLinkClicks(){
     var href = $link.attr('href');
     var hash = new URI(href).hash();
     var $target = $(hash);
-
-    if ($target) {
+    if ($target.length) {
       $link.attr('href', hash);
     }
   });
+
+  $links.filter('[href="' + window.location.href + '"]').parent().addClass('active');
 
   $links.on('click', function(clickEvent){
     var $link = $(this);
@@ -256,7 +257,7 @@ function handleLinkClicks(){
 
     if ($link.hasClass('page-scroll')) {
       var $target = $(url.hash());
-      if($target) {
+      if($target.length) {
         clickEvent.preventDefault();
         $parent.stop().animate({
           scrollTop: $target.offset().top - 50
