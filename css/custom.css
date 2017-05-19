@@ -221,7 +221,7 @@ header svg {
   width: 12%;
 }
 
-#about-and-faq {
+#about-and-faq, #info {
   background: rgba(255, 255, 255, 0.85);
 }
 
@@ -234,7 +234,7 @@ header svg {
   margin-bottom: 60px;
 }
 
-#workshops, #schedule {
+#workshops, #schedule.frontpage {
   color: #FFF;
   background-color: rgba(2, 10, 65, 1);
   background-image: none;
@@ -346,12 +346,19 @@ header .btn {
   font-size: 1.2em;
 }
 
-#schedule {
+#schedule.frontpage {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 50px;
   background-size: 42%;
   background-image: url(../img/hh2016.gif);
+}
+
+#schedule.frontpage h1,
+#schedule.frontpage h2,
+#schedule.frontpage .time,
+#schedule.frontpage .description {
+  background: rgba(2, 10, 65, 0.9);
 }
 
 #schedule ul {
@@ -370,21 +377,15 @@ header .btn {
   content: " ";
 }
 
-#schedule h1, #schedule h2 {
-  background: rgba(2, 10, 65, 0.9);
-}
-
 #schedule .time {
   text-align: right;
   color: #E55454;
   font-weight: 200;
   font-family: 'GT-Pressura-Mono-Light', monospace;
-  background: rgba(2, 10, 65, 0.9);
 }
 
 #schedule .description {
   box-sizing: border-box;
-  background: rgba(2, 10, 65, 0.9);
 }
 
 #schedule .description strong {
@@ -668,3 +669,5 @@ header .btn {
   margin: auto;
   max-height: 120px;
 }
+
+
