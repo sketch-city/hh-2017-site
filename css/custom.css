@@ -289,6 +289,10 @@ header .btn {
   margin-right: 15px;
 }
 
+header a.page-scroll {
+  color: #E55454;
+}
+
 #contact {
   color: #FFFFFF;
 }
