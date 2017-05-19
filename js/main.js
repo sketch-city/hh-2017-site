@@ -123,6 +123,24 @@ function afterPageRender(){
   if ((document.querySelector('header') && !inView.is(document.querySelector('header'))) || !document.querySelector('header')) {
     setCircleHiding();
   }
+
+  // Highlight the top nav as scrolling occurs
+  $('body').scrollspy({
+    target: '.navbar-fixed-top',
+    offset: 100
+  });
+
+  // Closes the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+  });
+
+  // Offset for Main Navigation
+  $('#mainNav').affix({
+    offset: {
+      top: 50
+    }
+  });
 }
 
 function goToHash(hash){
@@ -216,6 +234,39 @@ function renderPartners(container){
   container.innerHTML = partnersHTML;
 }
 
+function handleLinkClicks(){
+  var $links = $('a');
+  var $parent = $('html, body');
+
+  $links.filter('.page-scroll').each(function(menuItem){
+    var $link = $(this);
+    var href = $link.attr('href');
+    var hash = new URI(href).hash();
+    var $target = $(hash);
+
+    if ($target) {
+      $link.attr('href', hash);
+    }
+  });
+
+  $links.on('click', function(clickEvent){
+    var $link = $(this);
+    var href = $link.attr('href');
+    var url = new URI(href);
+
+    if ($link.hasClass('page-scroll')) {
+      var $target = $(url.hash());
+      if($target) {
+        clickEvent.preventDefault();
+        $parent.stop().animate({
+          scrollTop: $target.offset().top - 50
+        }, 1250, 'easeInOutExpo');
+      }
+    }
+
+  });
+}
+
 $(function() {
 
   var contentContainer = document.getElementById('content');
@@ -232,6 +283,7 @@ $(function() {
       return response;
     })
     .then(afterPageRender)
+    .then(handleLinkClicks)
     .then(function(){
       if(window.location.hash) {
         goToHash(window.location.hash);
