@@ -259,11 +259,32 @@ header svg {
   }
 }
 
-#workshops .section-heading,
-#workshops p {
+#workshops .container-fluid {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#workshops a {
+  text-decoration: none;
+}
+
+#workshops .details {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#workshops ul {
+  list-style: none;
+  padding: 0;
+}
+
+#workshops li {
+  border-bottom: 2px solid #E55454;
+}
+#workshops .partnership {
+  margin-top: 2em;
+  font-size: 0.8em;
 }
 
 #workshops a:not([class]):hover,
@@ -672,6 +693,11 @@ header a.page-scroll {
 #partners .partner img {
   margin: auto;
   max-height: 120px;
+}
+
+#partners .partner a[href="https://codeparkhouston.org"] img {
+  margin: auto;
+  max-height: 150px;
 }
 
 

@@ -171,24 +171,20 @@ function renderPartners(container){
       url: "http://www.harriscountyso.org/"
     },
     {
-      img: "HTC.svg",
-      url: "https://www.houstontech.org/"
-    },
-    {
-      img: "theironyard.png",
-      url: "https://www.theironyard.com/locations/houston.html"
+      img: "cannon-logo.png",
+      url: "https://thecannonhouston.com/"
     },
     {
       img: "stationhouston.png",
       url: "http://stationhouston.com/"
     },
     {
-      img: "techforjustice.png",
-      url: "https://www.techforjustice.org"
-    },
-    {
       img: "code-park.png",
       url: "https://codeparkhouston.org"
+    },
+    {
+      img: "techforjustice.png",
+      url: "https://www.techforjustice.org"
     },
     {
       img: "houston-useRs-med.png",
