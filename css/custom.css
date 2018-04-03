@@ -700,4 +700,8 @@ header a.page-scroll {
   max-height: 150px;
 }
 
+.changed {
+  text-decoration: line-through;
+}
+
 
