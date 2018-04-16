@@ -175,10 +175,6 @@ function renderPartners(container){
       url: "https://thecannonhouston.com/"
     },
     {
-      img: "stationhouston.png",
-      url: "http://stationhouston.com/"
-    },
-    {
       img: "code-park.png",
       url: "https://codeparkhouston.org"
     },
