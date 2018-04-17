@@ -183,6 +183,14 @@ function renderPartners(container){
       url: "https://codeparkhouston.org"
     },
     {
+      img: "CPanel_logo.svg.png",
+      url: "https://cpanel.com/"
+    },
+    {
+      img: "twosigma.png",
+      url: "https://twosigma.com/"
+    },        
+    {
       img: "codeforamerica.png",
       url: "https://www.codeforamerica.org"
     },
@@ -193,10 +201,6 @@ function renderPartners(container){
     {
       img: "houston-useRs-med.png",
       url: "https://houstonusers.github.io/"
-    },
-    {
-      img: "CPanel_logo.svg.png",
-      url: "https://cpanel.com/"
     },
     {
       img: "aiga_hou.png",
