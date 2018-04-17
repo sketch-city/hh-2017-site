@@ -183,6 +183,10 @@ function renderPartners(container){
       url: "https://codeparkhouston.org"
     },
     {
+      img: "codeforamerica.png",
+      url: "https://www.codeforamerica.org"
+    },
+    {
       img: "techforjustice.png",
       url: "https://www.techforjustice.org"
     },
