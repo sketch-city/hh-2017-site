@@ -163,12 +163,16 @@ function renderPartners(container){
       url: "http://www.houstontx.gov/"
     },
     {
-      img: "controllerseal180.jpg",
-      url: "http://www.houstontx.gov/controller/"
-    },
-    {
       img: "HCSO-LOGO2.png",
       url: "http://www.harriscountyso.org/"
+    },
+    {
+      img: "sketch-city.png",
+      url: "http://sketchcity.org/"
+    },
+    {
+      img: "januaryadvisors-logo.png",
+      url: "http://januaryadvisors.com/"
     },
     {
       img: "cannon-logo.png",
