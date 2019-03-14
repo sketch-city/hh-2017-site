@@ -159,16 +159,16 @@ function getContentPath(){
 function renderPartners(container){
   var partners = [
     {
-      img: "City-of-Houston-Seal.gif",
-      url: "http://www.houstontx.gov/"
-    },
-    {
-      img: "HCSO-LOGO2.png",
-      url: "http://www.harriscountyso.org/"
-    },
-    {
       img: "sketch-city.png",
       url: "http://sketchcity.org/"
+    },
+    {
+      img: "CPanel_logo.svg.png",
+      url: "https://cpanel.com/"
+    }, 
+    {
+      img: "City-of-Houston-Seal.gif",
+      url: "http://www.houstontx.gov/"
     },
     {
       img: "januaryadvisors-logo.png",
@@ -181,38 +181,14 @@ function renderPartners(container){
     {
       img: "code-park.png",
       url: "https://codeparkhouston.org"
-    },
-    {
-      img: "CPanel_logo.svg.png",
-      url: "https://cpanel.com/"
-    },
-    {
-      img: "twosigma.png",
-      url: "https://twosigma.com/"
-    },        
+    },     
     {
       img: "codeforamerica.png",
       url: "https://www.codeforamerica.org"
     },
     {
-      img: "techforjustice.png",
-      url: "https://www.techforjustice.org"
-    },
-    {
       img: "houston-useRs-med.png",
       url: "https://houstonusers.github.io/"
-    },
-    {
-      img: "aiga_hou.png",
-      url: "https://houston.aiga.org/"
-    },
-    {
-      img: "ESRI.jpg",
-      url: "https://houston.aiga.org/"
-    },
-    {
-      img: "HCA.png",
-      url: "https://houstontxcodingacademy.com/"
     },
     {
       img: "houston-data-vis.png",
